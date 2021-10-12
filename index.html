@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <script src="https://kit.fontawesome.com/2dd6a68561.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div class="hero">
+        <nav>
+            <h1>LOGO</h1>
+
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">ACERCA DE MI</a></li>
+                <li><a href="#">SERVICIOS</a></li>
+                <li><a href="#">CLIENTES</a></li>
+                <li><a href="#">CONTACTAME</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <div class="herores">
+        <span>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </span>
+
+        <div class="navbar">
+            <a href="#" data-text="INICIO">INICIO</a>
+            <a href="#" data-text="NOSOTROS">ACERCA DE MI</a>
+            <a href="#" data-text="SERVICIOS">SERVICIOS</a>
+            <a href="#" data-text="EQUIPO">CLIENTES</a>
+            <a href="#" data-text="CONTACTAME">CONTACTAME</a>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="portada">
+
+        <div class="portada__texto">
+            <h1>Yo soy Alex <span>ARBOLEDA</span></h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur.
+                <br>Lorem ipsum dolor sit amet Lorem, ipsum dolor. consectetur.
+            </p>
+            <a href="#">  </a>
+        </div>
+
+        <div class="portada__images">
+            <img src="IMG/shape.png" alt="" class="shape">
+            <img src="IMG/girl.png" alt="" class="persona">
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.querySelector('#menu-btn').onclick = () => {
+            document.querySelector('#menu-btn').classList.toggle('fa-times');
+
+            document.querySelector('.navbar').classList.toggle('active');
+        }
+
+        document.querySelector('.navbar').onclick = () => {
+            if (document.querySelector('.navbar').classList.toggle('active')) {
+                document.querySelector('.navbar').classList.toggle('inactive')
+
+
+            }
+            if (document.querySelector('#menu-btn').classList.toggle('fa-times')) {
+                document.querySelector('#menu-btn').classList.toggle('active');
+
+            }
+
+
+        }
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
